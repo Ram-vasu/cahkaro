@@ -21,6 +21,26 @@ const reviews = [
     text: "Bought a laptop from Croma using CashKaro and got a solid cashback amount. Didn’t think it would actually wor...",
     name: "Amit Dey",
   },
+  {
+    img: "/public/51F29WiGdLL._SL500_.jpg",
+    text: "I was skeptical at first, but CashKaro actually gives cashback on Amazon orders. I’ve saved so much over the...",
+    name: "Rohit Talsania",
+  },
+  {
+    img: "/public/51J7qLhFWoL._SL500_.jpg",
+    text: "Bought a laptop from Croma using CashKaro and got a solid cashback amount. Didn’t think it would actually wor...",
+    name: "Amit Dey",
+  },
+  {
+    img: "/public/51F29WiGdLL._SL500_.jpg",
+    text: "I was skeptical at first, but CashKaro actually gives cashback on Amazon orders. I’ve saved so much over the...",
+    name: "Rohit Talsania",
+  },
+  {
+    img: "/public/51J7qLhFWoL._SL500_.jpg",
+    text: "Bought a laptop from Croma using CashKaro and got a solid cashback amount. Didn’t think it would actually wor...",
+    name: "Amit Dey",
+  },
 ];
 
 const Review = () => {
@@ -39,7 +59,7 @@ const Review = () => {
 
   return (
     <div className="w-full bg-white py-16 px-2 md:px-0">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl px-6 mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
           Meet Our Superstars
         </h2>

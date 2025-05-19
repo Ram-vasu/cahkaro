@@ -164,7 +164,7 @@ const Brands = () => {
       <div className="relative w-full max-w-full overflow-hidden">
         {/* Slider Controls */}
         <button
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden lg:block"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden lg:block text-black"
           onClick={() => scroll(-1)}
           aria-label="Previous"
         >
@@ -176,11 +176,11 @@ const Brands = () => {
             strokeWidth="2"
             viewBox="0 0 24 24"
           >
-            <path d="M8 15l4-4-4-4" />
+            <path d="M4 12h16M10 6l-6 6 6 6" />
           </svg>
         </button>
         <button
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden lg:block"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden lg:block text-black"
           onClick={() => scroll(1)}
           aria-label="Next"
         >
@@ -192,14 +192,20 @@ const Brands = () => {
             strokeWidth="2"
             viewBox="0 0 24 24"
           >
-            <path d="M16 9l-4 4 4 4" />
+            <path d="M20 12H4m6 6l6-6-6-6" />
           </svg>
         </button>
+
         {/* Vertical Slider */}
         <div
           ref={sliderRef}
-          className="flex gap-6 overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto h-[600px] lg:h-[600px]"
-          style={{ scrollSnapType: "y mandatory" }}
+          className="flex gap-6 overflow-x-auto lg:overflow-x-auto h-[600px] lg:h-[600px]"
+          style={{
+            scrollSnapType: "x mandatory",
+            height: "auto",
+            minHeight: 0,
+            marginBottom: 16, // Add a little bit of space below the slider
+          }}
         >
           {columns.map((col, colIdx) => (
             <div

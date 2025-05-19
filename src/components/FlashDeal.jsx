@@ -170,9 +170,9 @@ const FlashDeal = () => {
           Deals ends in {formatTime(timeLeft)}
         </div>
       </div>
-      <div style={{ position: "relative", width: "100%" }}>
+      <div style={{ position: "relative", width: "100%" }} className="px-4">
         <button
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block text-black"
           onClick={() => scroll(-1)}
           aria-label="Previous"
           style={{
@@ -195,7 +195,7 @@ const FlashDeal = () => {
           </svg>
         </button>
         <button
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block text-black"
           onClick={() => scroll(1)}
           aria-label="Next"
           style={{

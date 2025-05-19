@@ -12,6 +12,7 @@ import EcomPlatformCoupon from "./EcomPlatformCoupon";
 import AccordiantDesign from "./components/AccordiantDesign";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
+import CashkaroWorks from "./components/CashkaroWorks";
 
 function App() {
   const brandwiseData = {
@@ -240,6 +241,7 @@ function App() {
       ))}
       {/* <BrandsWiseDeal /> */}
       <TopSellingProducts />
+      <CashkaroWorks />
       <InviteBanner />
       <Coupon title="" card="" />
       <EcomPlatformCoupon title="" card="" />

@@ -59,7 +59,7 @@ const BrandsWiseDeal = ({ key, brandName, deals }) => {
         </div>
         <div style={{ position: "relative", width: "100%" }}>
           <button
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block text-black"
             onClick={() => scroll(-1)}
             aria-label="Previous"
             style={{
@@ -82,7 +82,7 @@ const BrandsWiseDeal = ({ key, brandName, deals }) => {
             </svg>
           </button>
           <button
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block text-black"
             onClick={() => scroll(1)}
             aria-label="Next"
             style={{
@@ -110,50 +110,97 @@ const BrandsWiseDeal = ({ key, brandName, deals }) => {
             style={{ scrollSnapType: "x mandatory" }}
           >
             {deals.map((deal, idx) => (
-              <div
-                key={idx}
-                data-flash-card
-                className="min-w-[500px] max-w-[520px] w-[98vw] md:w-[500px] rounded-3xl  shadow relative flex flex-col justify-between"
-                style={{ scrollSnapAlign: "start", height: 380 }}
-              >
-                <div className="flex items-center justify-center overflow-hidden rounded-xl relative w-full h-full cursor-pointer">
-                  <div className="w-full h-full ">
-                    <img
-                      alt={deal.title}
-                      loading="lazy"
-                      width="302"
-                      height="236"
-                      decoding="async"
-                      className="w-full h-full rounded-xl"
-                      src={deal.image}
-                      style={{ color: "transparent" }}
-                    />
-                  </div>
-                  <div className="w-full absolute inset-0 z-10">
-                    <div className="absolute top-[19%] md:top-[19%] left-2.5 flex items-center overflow-hidden lg:!top-[19%] ">
+              <>
+                <div
+                  key={idx}
+                  data-flash-card
+                  className="hidden min-w-[500px] max-w-[520px] w-[98vw] md:w-[500px] rounded-3xl shadow relative flex flex-col justify-between md:flex"
+                  style={{ scrollSnapAlign: "start", height: 380 }}
+                >
+                  <div className="flex items-center justify-center overflow-hidden rounded-xl relative w-full h-full cursor-pointer">
+                    <div className="w-full h-full ">
                       <img
-                        alt={deal.title.split(":")[0]}
+                        alt={deal.title}
                         loading="lazy"
-                        width="112"
-                        height="56"
+                        width="302"
+                        height="236"
                         decoding="async"
-                        className="!border-[1.5px] !border-[#F5F7F9] p-[2px] object-contain w-[72px] h-10 md:w-[84px] md:h-12 2xl:w-[108px] 2xl:h-[60px] mr-2 rounded-lg lg:rounded-xl overflow-hidden "
-                        src={deal.logo}
+                        className="w-full h-full rounded-xl"
+                        src={deal.image}
                         style={{ color: "transparent" }}
                       />
-                      <label className="text-ck-text-black text-[10px] md:text-xs font-normal w-20 text-left flex items-center border-l-[1px] border-ck-text-black pl-2 md:h-12">
-                        {deal.title}
-                      </label>
                     </div>
-                    <button
-                      type="button"
-                      className="absolute bottom-2.5 2xl:bottom-3 right-2.5 2xl:right-3 bg-white border-none !rounded-lg tracking-tight !text-ck-blue !font-semibold !text-xs md:!text-sm lg:!text-base 2xl:!text-lg !px-4 !py-1.5 lg:!w-auto 2xl:!w-auto capitalize !max-w-[50%] truncate !bg-ck-blue !text-white stretched_link"
-                    >
-                      {deal.cta}
-                    </button>
+                    <div className="w-full absolute inset-0 z-10">
+                      <div className="absolute top-[19%] md:top-[19%] left-2.5 flex items-center overflow-hidden lg:!top-[19%] ">
+                        <img
+                          alt={deal.title.split(":")[0]}
+                          loading="lazy"
+                          width="112"
+                          height="56"
+                          decoding="async"
+                          className="!border-[1.5px] !border-[#F5F7F9] p-[2px] object-contain w-[72px] h-10 md:w-[84px] md:h-12 2xl:w-[108px] 2xl:h-[60px] mr-2 rounded-lg lg:rounded-xl overflow-hidden "
+                          src={deal.logo}
+                          style={{ color: "transparent" }}
+                        />
+                        <label className="text-ck-text-black text-[10px] md:text-xs font-normal w-20 text-left flex items-center border-l-[1px] border-ck-text-black pl-2 md:h-12">
+                          {deal.title}
+                        </label>
+                      </div>
+                      <button
+                        type="button"
+                        className="absolute bottom-2.5 2xl:bottom-3 right-2.5 2xl:right-3 bg-white border-none !rounded-lg tracking-tight !text-ck-blue !font-semibold !text-xs md:!text-sm lg:!text-base 2xl:!text-lg !px-4 !py-1.5 lg:!w-auto 2xl:!w-auto capitalize !max-w-[50%] truncate !bg-ck-blue !text-white stretched_link"
+                      >
+                        {deal.cta}
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+                {/* Mobile Card */}
+                <div
+                  key={`mobile-${idx}`}
+                  data-flash-card
+                  className="flex md:hidden min-w-[80vw] max-w-[88vw] w-[88vw] rounded-xl shadow relative flex-col justify-between"
+                  style={{ scrollSnapAlign: "start", height: 220 }}
+                >
+                  <div className="flex items-center justify-center overflow-hidden rounded-lg relative w-full h-full cursor-pointer">
+                    <div className="w-full h-full ">
+                      <img
+                        alt={deal.title}
+                        loading="lazy"
+                        width="180"
+                        height="120"
+                        decoding="async"
+                        className="w-full h-full rounded-lg"
+                        src={deal.image}
+                        style={{ color: "transparent" }}
+                      />
+                    </div>
+                    <div className="w-full absolute inset-0 z-10">
+                      <div className="absolute top-[19%] left-2.5 flex items-center overflow-hidden">
+                        <img
+                          alt={deal.title.split(":")[0]}
+                          loading="lazy"
+                          width="48"
+                          height="28"
+                          decoding="async"
+                          className="!border-[1.5px] !border-[#F5F7F9] p-[1px] object-contain w-[36px] h-7 mr-2 rounded-lg overflow-hidden "
+                          src={deal.logo}
+                          style={{ color: "transparent" }}
+                        />
+                        <label className="text-ck-text-black text-[9px] font-normal w-12 text-left flex items-center border-l-[1px] border-ck-text-black pl-2 h-7">
+                          {deal.title}
+                        </label>
+                      </div>
+                      <button
+                        type="button"
+                        className="absolute bottom-2 right-2 bg-white border-none rounded-lg tracking-tight text-ck-blue font-semibold text-xs px-2 py-1 capitalize max-w-[60%] truncate bg-ck-blue text-white"
+                      >
+                        {deal.cta}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </>
             ))}
           </div>
         </div>

@@ -49,15 +49,12 @@ const Coupon = ({ title, card }) => {
           <Slider {...settings} className="review-slick-slider">
             {featuresData.map((f, i) => (
               <div key={i} className="flex justify-center">
-                <div className="bg-white rounded-3xl overflow-hidden flex flex-col items-center justify-end shadow-md w-[90vw] max-w-[320px] min-w-[220px] h-[220px] sm:h-[320px] mx-auto">
+                <div className=" rounded-3xl overflow-hidden flex flex-col items-center justify-end  w-[90vw] max-w-[320px] min-w-[220px] h-[220px] sm:h-[320px] mx-auto">
                   <img
                     src={f.image}
                     alt={f.alt}
                     className="w-full h-full object-contain object-center p-4"
                   />
-                  <span className="block text-center text-base font-semibold text-gray-700 mt-2 mb-4 px-2 truncate w-full">
-                    {f.label}
-                  </span>
                 </div>
               </div>
             ))}
@@ -67,16 +64,13 @@ const Coupon = ({ title, card }) => {
           {featuresData.map((f, i) => (
             <div
               key={i}
-              className="bg-white rounded-3xl overflow-hidden flex flex-col items-center justify-end shadow-md w-full max-w-[320px] min-w-[220px] h-[220px] sm:h-[320px] mx-auto"
+              className=" rounded-3xl overflow-hidden flex flex-col items-center justify-end  w-full max-w-[320px] min-w-[220px] h-[220px] sm:h-[320px] mx-auto"
             >
               <img
                 src={f.image}
                 alt={f.alt}
                 className="w-full h-full object-contain object-center p-4"
               />
-              <span className="block text-center text-base font-semibold text-gray-700 mt-2 mb-4 px-2 truncate w-full">
-                {f.label}
-              </span>
             </div>
           ))}
         </div>

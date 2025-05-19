@@ -22,11 +22,11 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-full overflow-x-hidden bg-white pt-0 py-4 mb-0 md:py-8">
+    <div className="relative w-full overflow-x-hidden bg-white pt-0 py-4 mb-0 md:py-8 px-5">
       <section className="homePgeBnr">
         {/* Slider Controls (desktop only) */}
         <button
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block text-black"
           onClick={() => scroll(-1)}
           aria-label="Previous"
         >
@@ -42,7 +42,7 @@ const Banner = () => {
           </svg>
         </button>
         <button
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block text-black"
           onClick={() => scroll(1)}
           aria-label="Next"
         >
@@ -68,12 +68,12 @@ const Banner = () => {
               key={idx}
               src={img}
               alt={`Banner ${idx + 1}`}
-              className="w-[92vw] min-w-[92vw] max-w-[92vw] md:w-[380px] md:min-w-[380px] md:max-w-[480px] rounded-3xl object-cover"
+              className="w-[92vw] min-w-[92vw] max-w-[92vw] md:w-[32vw] md:min-w-[32vw] md:max-w-[32vw] rounded-3xl object-cover"
               style={{
                 scrollSnapAlign: "start",
-                height: 220,
+                height: 260, // increased from 220
                 maxHeight: "56vw",
-                minHeight: 160,
+                minHeight: 180, // increased from 160
               }}
             />
           ))}

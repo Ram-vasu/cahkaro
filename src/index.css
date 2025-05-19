@@ -64,3 +64,15 @@ body{
   border-color: #f2f7fc;
   border-style: solid;
 }
+.bg-ck-blue {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(0 54 218 / var(--tw-bg-opacity)) !important;
+}
+.\!bg-ck-blue {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(0 54 218 / var(--tw-bg-opacity)) !important;
+}
+.top-coupon-slider .slick-arrow {
+  /* padding: 0 0.5rem; */
+  display: none !important
+}

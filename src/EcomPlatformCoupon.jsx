@@ -59,13 +59,13 @@ const EcomPlatformCoupon = ({ title, card }) => {
     variableWidth: true,
   };
   return (
-    <div className="w-full flex flex-col items-center py-10 px-2">
+    <div className="w-full flex flex-col items-center py-10 px-2 relative">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-black">
         {title ? title : "Today's Top Coupon Codes"}
       </h2>
       {/* Mobile: Slider, Desktop: Flex Grid */}
       <div className="w-full">
-        <div className="block sm:hidden">
+        <div className="block sm:hidden top-coupon-slider">
           <Slider {...settings} className="review-slick-slider">
             {couponsData.map((c, i) => (
               <div key={i} className="flex justify-center">
@@ -167,6 +167,52 @@ const EcomPlatformCoupon = ({ title, card }) => {
           ))}
         </div>
       </div>
+      <button
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden sm:block"
+        onClick={() => scroll(-1)}
+        aria-label="Previous"
+        style={{
+          left: 0,
+          top: "50%",
+          position: "absolute",
+          transform: "translateY(-50%)",
+          zIndex: 99999,
+        }}
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden sm:block"
+        onClick={() => scroll(1)}
+        aria-label="Next"
+        style={{
+          right: 0,
+          top: "50%",
+          position: "absolute",
+          transform: "translateY(-50%)",
+          zIndex: 99999,
+        }}
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
     </div>
   );
 };

@@ -84,7 +84,7 @@ const Categories = () => {
       </h2>
       <div className="relative">
         <button
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block text-black"
           onClick={() => scroll(-1)}
           aria-label="Previous"
         >
@@ -100,7 +100,7 @@ const Categories = () => {
           </svg>
         </button>
         <button
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow p-2 hover:bg-white hidden md:block text-black "
           onClick={() => scroll(1)}
           aria-label="Next"
         >
