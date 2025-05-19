@@ -1,0 +1,26 @@
+/* Hide scrollbars for all browsers */
+
+/* For Webkit browsers */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+/* For Edge/IE */
+html, body {
+  -ms-overflow-style: none !important;
+}
+
+/* For specific slider classes if needed */
+.review-slick-slider, .scrollbar-hide, .slick-slider, .slick-list {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+.review-slick-slider::-webkit-scrollbar, .scrollbar-hide::-webkit-scrollbar, .slick-slider::-webkit-scrollbar, .slick-list::-webkit-scrollbar {
+  display: none !important;
+}

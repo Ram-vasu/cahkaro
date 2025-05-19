@@ -1,0 +1,66 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background-color: white;
+}
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+.line-clamp-1,
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.text-ck-red {
+  --tw-text-opacity: 1;
+  color: rgb(212 16 0 / var(--tw-text-opacity));
+}
+.border-ck-artBoard-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 247 249 / var(--tw-border-opacity));
+}
+.border-ck-stroke-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 227 236 / var(--tw-border-opacity));
+}
+.border-b-0 {
+  border-bottom-width: 0;
+}
+.text-ck-text-black {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity));
+}
+@media (min-width: 768px) {
+  .invite_section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    border-top-width: 10px;
+  }
+}
+.invite_section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top-width: 3px;
+  border-color: #f2f7fc;
+  border-style: solid;
+}
