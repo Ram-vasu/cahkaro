@@ -13,6 +13,7 @@ import AccordiantDesign from "./components/AccordiantDesign";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
 import CashkaroWorks from "./components/CashkaroWorks";
+import "./styles/hide-scrollbar.css";
 
 function App() {
   const brandwiseData = {
