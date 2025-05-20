@@ -79,7 +79,7 @@ const AccordiantDesign = () => {
 
   return (
     <div className="w-full bg-white border-t border-b border-gray-200 py-12 px-2 md:px-0">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:space-x-0 space-y-12 md:space-y-0">
+      <div className="max-w-8xl mx-auto flex flex-col md:flex-col md:space-x-0 space-y-12 md:space-y-0 justify-center items-center">
         <div className="w-full md:w-1/2 flex flex-col items-center">
           <AccordionSection
             title="Popular Stores"
