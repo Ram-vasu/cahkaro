@@ -2,44 +2,44 @@ import React, { useRef } from "react";
 
 const reviews = [
   {
-    img: "/public/31na34LxwmL._SL500_.jpg",
+    img: "https://asset22.ckassets.com/resources/image/staticpage_images/Divya-1742900880.jpg",
     text: "Whenever I shop for skincare or makeup on Nykaa, I use CashKaro. It’s an easy way to get some of my money back.",
     name: "Divya Painuilly",
   },
   {
-    img: "/public/41-iSp68mZS._SL500_.jpg",
+    img: "https://asset22.ckassets.com/resources/image/staticpage_images/Priya-1742900894.jpg",
     text: "I shop on Amazon all the time, but ever since I started using CashKaro, I’ve been getting extra cashback on my...",
     name: "Priya Saxena",
   },
   {
-    img: "/public/51F29WiGdLL._SL500_.jpg",
+    img: "https://asset22.ckassets.com/resources/image/staticpage_images/Rohit-1742900910.jpg",
     text: "I was skeptical at first, but CashKaro actually gives cashback on Amazon orders. I’ve saved so much over the...",
     name: "Rohit Talsania",
   },
   {
-    img: "/public/51J7qLhFWoL._SL500_.jpg",
+    img: "https://asset22.ckassets.com/resources/image/staticpage_images/Amit-1742900914.jpg",
     text: "Bought a laptop from Croma using CashKaro and got a solid cashback amount. Didn’t think it would actually wor...",
     name: "Amit Dey",
   },
   {
-    img: "/public/51F29WiGdLL._SL500_.jpg",
+    img: "https://asset22.ckassets.com/resources/image/staticpage_images/Ankita-1742900926.jpg",
     text: "I was skeptical at first, but CashKaro actually gives cashback on Amazon orders. I’ve saved so much over the...",
     name: "Rohit Talsania",
   },
   {
-    img: "/public/51J7qLhFWoL._SL500_.jpg",
-    text: "Bought a laptop from Croma using CashKaro and got a solid cashback amount. Didn’t think it would actually wor...",
-    name: "Amit Dey",
-  },
-  {
-    img: "/public/51F29WiGdLL._SL500_.jpg",
+    img: "https://asset22.ckassets.com/resources/image/staticpage_images/Rohit-1742900910.jpg",
     text: "I was skeptical at first, but CashKaro actually gives cashback on Amazon orders. I’ve saved so much over the...",
     name: "Rohit Talsania",
   },
   {
-    img: "/public/51J7qLhFWoL._SL500_.jpg",
+    img: "https://asset22.ckassets.com/resources/image/staticpage_images/Amit-1742900914.jpg",
     text: "Bought a laptop from Croma using CashKaro and got a solid cashback amount. Didn’t think it would actually wor...",
     name: "Amit Dey",
+  },
+  {
+    img: "https://asset22.ckassets.com/resources/image/staticpage_images/Ankita-1742900926.jpg",
+    text: "I was skeptical at first, but CashKaro actually gives cashback on Amazon orders. I’ve saved so much over the...",
+    name: "Rohit Talsania",
   },
 ];
 
